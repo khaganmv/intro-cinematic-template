@@ -1,9 +1,9 @@
-from pytube import YouTube
+from pytubefix import YouTube
 import subprocess
 import os
 
 
-URL = "https://www.youtube.com/watch?v=kfX9n_G0N2Y"
+URL = "https://www.youtube.com/watch?v=KvMY1uzSC1E"
 
 AUDIO_DIR = "audio/"
 VIDEO_DIR = "video/"
@@ -58,16 +58,17 @@ def audio_to_wav(audio):
     os.remove(f"{AUDIO_DIR}{audio}")
 
 
+# Ideally download as .webm and convert to .mp4 using ffmpeg
 def get_video(video_streams):
     enumerate_streams(video_streams, "video")
     video_stream_index = get_stream_index(video_streams)
-    video_streams[video_stream_index].download(output_path=VIDEO_DIR, filename="video.mp4")
+    video_streams[video_stream_index].download(output_path=VIDEO_DIR, filename="video.webm")
 
 
 try:
     init_dirs()
     yt = YouTube(URL)
     get_audio(yt.streams.filter(only_audio=True))
-    get_video(yt.streams.filter(resolution="2160p"))
+    get_video(yt.streams.filter(resolution="1440p"))
 except Exception as e:
     print(e)

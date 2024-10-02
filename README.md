@@ -30,7 +30,7 @@ Convert to BK2 using RAD Video Tools.
 ```ffmpeg -i video/video.mp4 -t 00:00:54 -c:v copy -c:a copy -crf: 0 video/video_back.mp4```
 
 ### Fade in
-```ffmpeg -i video/video.mp4 -vf "fade=t=in:st=0:d=5" -c:v copy -c:a copy -crf: 0 video/video_fadein.mp4```
+```ffmpeg -i video/video.mp4 -vf "fade=t=in:st=0:d=5" -crf: 0 video/video_fadein.mp4```
 
 ### Fade out
-```ffmpeg -i video/video.mp4 -vf "fade=t=out:st=10:d=5" -c:v copy -c:a copy -crf: 0 video/video_fadeout.mp4```
+```ffmpeg -i video/video.mp4 -vf "fade=t=out:st=10:d=5" -crf: 0 video/video_fadeout.mp4```

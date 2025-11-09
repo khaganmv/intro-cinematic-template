@@ -1,10 +1,8 @@
-import os
 import shutil
 
 
-SRC = "audio/audio_muted.wem"
-OUT = "out/"
-
+SRC = "audio/audio.wem"
+OUT = "audio/"
 WEM = [
     "1038719001.wem", 
     "1052911782.wem", 
@@ -19,9 +17,6 @@ WEM = [
     "964673994.wem"
 ]
 
-
-if not os.path.exists(OUT):
-    os.mkdir(OUT)
 
 for wem in WEM:
     shutil.copy(SRC, OUT + wem)

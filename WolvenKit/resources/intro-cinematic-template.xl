@@ -1,0 +1,21 @@
+localization:
+  onscreens:
+    ar-ar: base\localization\intro-cinematic-template.json
+    cz-cz: base\localization\intro-cinematic-template.json
+    de-de: base\localization\intro-cinematic-template.json
+    en-us: base\localization\intro-cinematic-template.json
+    es-es: base\localization\intro-cinematic-template.json
+    es-mx: base\localization\intro-cinematic-template.json
+    fr-fr: base\localization\intro-cinematic-template.json
+    hu-hu: base\localization\intro-cinematic-template.json
+    it-it: base\localization\intro-cinematic-template.json
+    jp-jp: base\localization\intro-cinematic-template.json
+    kr-kr: base\localization\intro-cinematic-template.json
+    pl-pl: base\localization\intro-cinematic-template.json
+    pt-br: base\localization\intro-cinematic-template.json
+    ru-ru: base\localization\intro-cinematic-template.json
+    th-th: base\localization\intro-cinematic-template.json
+    tr-tr: base\localization\intro-cinematic-template.json
+    ua-ua: base\localization\intro-cinematic-template.json
+    zh-cn: base\localization\intro-cinematic-template.json
+    zh-tw: base\localization\intro-cinematic-template.json
